@@ -2,28 +2,28 @@ import React from 'react';
 
 const services = [
   {
-    number: '01',
+    number: '01', icon: '🌐',
     title: 'Création de Sites Web',
     description: 'Sites vitrines, e-commerce et portails sur mesure. Chaque projet est conçu pour refléter votre identité et convertir vos visiteurs en clients.',
-    details: ['Design responsive', 'Optimisation SEO', 'Performance maximale']
+    details: ['Design responsive & moderne', 'Optimisation SEO avancée', 'Performance & rapidité']
   },
   {
-    number: '02',
+    number: '02', icon: '⚙️',
     title: 'Développement de Plateformes',
     description: 'Plateformes métiers complexes, applications web et systèmes de gestion adaptés à vos processus opérationnels spécifiques.',
-    details: ['Architecture scalable', 'API & intégrations', 'Tableau de bord sur mesure']
+    details: ['Architecture scalable', 'API & intégrations tierces', 'Tableau de bord personnalisé']
   },
   {
-    number: '03',
+    number: '03', icon: '💡',
     title: 'Projets Numériques',
     description: 'Accompagnement complet dans la conception et le déploiement de vos projets digitaux, de l\'idée à la mise en production.',
-    details: ['Conseil & stratégie', 'Prototypage rapide', 'Suivi & maintenance']
+    details: ['Conseil & stratégie digitale', 'Prototypage rapide', 'Suivi & maintenance']
   },
   {
-    number: '04',
+    number: '04', icon: '📊',
     title: 'Digitalisation d\'Activités',
     description: 'Transformez vos processus manuels en workflows numériques efficaces. Gagnez du temps et réduisez vos coûts opérationnels.',
-    details: ['Automatisation', 'Outils de gestion', 'Formation & support']
+    details: ['Automatisation des tâches', 'Outils de gestion interne', 'Formation & support continu']
   }
 ];
 
@@ -37,8 +37,7 @@ const Services = () => {
       <div className="services-header">
         <span className="section-tag">Ce que nous faisons</span>
         <h2 className="section-title">
-          Des solutions numériques<br />
-          <em>taillées pour vous</em>
+          Des solutions <em>taillées</em><br />pour votre succès
         </h2>
         <p className="section-subtitle">
           Accessibles, efficaces et déployées rapidement — nous rendons la technologie
@@ -50,14 +49,12 @@ const Services = () => {
         {services.map((s, i) => (
           <div className="service-card" key={i}>
             <span className="service-number">{s.number}</span>
-            <div className="service-line"></div>
+            <div className="service-icon">{s.icon}</div>
             <h3 className="service-title">{s.title}</h3>
             <p className="service-desc">{s.description}</p>
             <ul className="service-details">
               {s.details.map((d, j) => (
-                <li key={j}>
-                  <span className="detail-check">—</span> {d}
-                </li>
+                <li key={j}>{d}</li>
               ))}
             </ul>
           </div>
@@ -66,7 +63,7 @@ const Services = () => {
 
       <div className="services-cta">
         <p>Un projet en tête ? Parlons-en.</p>
-        <button className="btn-dark" onClick={() => scrollTo('contact')}>
+        <button className="btn-blue" onClick={() => scrollTo('contact')}>
           Demander un devis gratuit
         </button>
       </div>

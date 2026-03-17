@@ -8,19 +8,16 @@ const Founder = () => {
           <div className="founder-img-wrapper">
             <img src="/marcel.jpg" alt="Marcel Houmenou Fagbohoun" className="founder-img" />
             <div className="founder-img-border"></div>
+            <div className="founder-badge-float">
+              Fondateur<br />& CEO
+            </div>
           </div>
           <div className="founder-social">
-            <a href="https://facebook.com/profile.php?id=61582188463438" target="_blank" rel="noreferrer" className="social-link">
-              Facebook
-            </a>
+            <a href="https://facebook.com/profile.php?id=61582188463438" target="_blank" rel="noreferrer" className="social-link">Facebook</a>
             <span className="social-sep">·</span>
-            <a href="https://x.com/HMarcel1601" target="_blank" rel="noreferrer" className="social-link">
-              X (Twitter)
-            </a>
+            <a href="https://x.com/HMarcel1601" target="_blank" rel="noreferrer" className="social-link">X (Twitter)</a>
             <span className="social-sep">·</span>
-            <a href="https://wa.me/0152933715" target="_blank" rel="noreferrer" className="social-link">
-              WhatsApp
-            </a>
+            <a href="https://wa.me/0152933715" target="_blank" rel="noreferrer" className="social-link">WhatsApp</a>
           </div>
         </div>
 

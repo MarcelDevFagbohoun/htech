@@ -2,18 +2,14 @@ import React from 'react';
 
 const Footer = () => {
   const year = new Date().getFullYear();
-
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
             <img src="/logo.png" alt="HTech Global" className="footer-logo" />
-            <p className="footer-tagline">
-              Transformer vos défis en solutions numériques.
-            </p>
+            <p className="footer-tagline">Transformer vos défis en solutions numériques accessibles.</p>
           </div>
-
           <div className="footer-links">
             <div className="footer-col">
               <span className="footer-col-title">Navigation</span>
@@ -22,7 +18,6 @@ const Footer = () => {
               <a href="#fondateur">Fondateur</a>
               <a href="#contact">Contact</a>
             </div>
-
             <div className="footer-col">
               <span className="footer-col-title">Liens</span>
               <a href="https://adeib.site" target="_blank" rel="noreferrer">ADEIB</a>
@@ -32,10 +27,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className="footer-bottom">
-          <p>© {year} HTech Global. Créé en 2026 — Tous droits réservés.</p>
-          <p className="footer-made">Fait avec passion par HTech Global</p>
+          <p>© {year} <span className="footer-blue">HTech Global</span> — Tous droits réservés.</p>
+          <p className="footer-made">Fait avec passion depuis le Bénin 🇧🇯</p>
         </div>
       </div>
     </footer>
